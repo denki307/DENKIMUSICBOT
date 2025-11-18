@@ -33,7 +33,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # Vars For API End Pont.
 YTPROXY_URL = getenv("YTPROXY_URL", 'https://tubed.okflix.top') ## E.G https://yt.okflix.
-YT_API_KEY = "sparrow123"
+YT_API_KEY = "30DxNexGenBots0e314c"
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
@@ -122,3 +122,4 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
