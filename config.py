@@ -36,7 +36,7 @@ YT_API_KEY = getenv("YT_API_KEY" , 'xbit_e40oXFazWDFy6rLPPICI1M8KdlW-91Dc' ) ## 
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/DENKI307/DENKIMUSICROBOT",
+    "https://github.com/denki307/DENKIMUSICBOT",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -121,6 +121,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 
