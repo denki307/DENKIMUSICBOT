@@ -77,6 +77,7 @@ async def overall_stats(client, CallbackQuery, _):
         len(ALL_MODULES),
         len(SUDOERS),
         await is_autoend(),
+        config.AUTO_LEAVING_ASSISTANT
         config.DURATION_LIMIT_MIN,
         await is_autoleave(),
     )
@@ -157,4 +158,5 @@ async def bot_stats(client, CallbackQuery, _):
     except MessageIdInvalid:
         await CallbackQuery.message.reply_photo(
             photo=config.STATS_IMG_URL, caption=text, reply_markup=markup
+
         )
