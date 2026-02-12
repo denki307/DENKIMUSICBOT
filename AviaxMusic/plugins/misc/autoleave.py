@@ -10,7 +10,7 @@ from pyrogram.enums import ChatType
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
         while not await asyncio.sleep(config.ASSISTANT_LEAVE_TIME):
-            from AnonXMusic.core.userbot import assistants
+            from AviaxMusic.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -57,7 +57,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Anony.stop_stream(chat_id)
+                    await Aviax.stop_stream(chat_id)
                 except:
                     continue
                 try:
@@ -70,3 +70,4 @@ async def auto_end():
 
 
 asyncio.create_task(auto_end())
+
